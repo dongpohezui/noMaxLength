@@ -1,15 +1,8 @@
 'use strict';
 
-var inputs = document.getElementsByTagName('input');
+var lists = document.querySelectorAll('[maxlength]');
 var i;
 
-for (i=0; i<inputs.length; i++) {
-	inputs[i].setAttribute("maxlength","");
-}
-
-var inputs = document.getElementsByTagName('input');
-var i;
-
-for (i=0; i<inputs.length; i++) {
-	inputs[i].setAttribute("maxlength","");
+for (i=0; i<lists.length; i++) {
+	lists[i].setAttribute("maxlength","");
 }
